@@ -11,19 +11,18 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="fotos/Screenshot_11-removebg-preview.png" alt="Logo" class="logo-nav me-2">
       Derechos Digitales
     </a>
-
     <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active text-white" aria-current="page" href="index.html">Inicio</a>
+          <a class="nav-link active text-white" href="index.html">Inicio</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white" href="derechos.html">Derechos</a>
@@ -36,8 +35,10 @@
         </li>
       </ul>
     </div>
+
   </div>
 </nav>
+
 
 <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
@@ -168,4 +169,17 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
+<style>
+  .logo-nav {
+  height: 100px !important;   /* ajusta el tamaño */
+  width: auto !important;
+  filter: brightness(0) invert(1) !important; /* lo pone blanco */
+}
+
+.navbar-brand {
+  font-size: 1.2rem !important; 
+  display: flex !important;
+  align-items: center !important;
+}
+</style>
 </html>
